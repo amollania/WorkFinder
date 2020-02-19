@@ -36,7 +36,8 @@ soup = soup.find(id ='resultsCol')
 
 print('List Catch Complate')
 
+soup = soup.find(id = 'jobtitle turnstileLink')
+
 f = open('japan_list.txt', 'w', encoding='UTF8')
 f.write(str(soup))
-
 f.close()
